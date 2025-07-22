@@ -9,15 +9,20 @@
 /*   Updated: 2025/07/21 16:06:44 by tlaranje         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdio.h>
 
-void ft_ft(int *nbr) {
-    *nbr = 42;
+void	ft_ft(int *nbr)
+{
+	*nbr = 42;
 }
 
-// int main(void) {
-//     int x = 0;
-//     ft_ft(&x);
-//     printf("x is now: %d\n", x);
-//     return 0;
+// int	main(void)
+// {
+// 	int	x;
+
+// 	x = '0';
+// 	ft_ft(&x);
+// 	printf("x is now: %d\n", x);
+// 	return (0);
 // }

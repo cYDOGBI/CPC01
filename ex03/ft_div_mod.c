@@ -1,52 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlaranje <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/21 16:18:44 by tlaranje          #+#    #+#             */
-/*   Updated: 2025/07/21 16:18:48 by tlaranje         ###   ########.fr       */
+/*   Created: 2025/07/22 11:19:52 by tlaranje          #+#    #+#             */
+/*   Updated: 2025/07/22 11:19:56 by tlaranje         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_ultimate_ft(int *********nbr)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	*********nbr = 42;
-}
-
-void	ft_pointer_p1(int ****p4)
-{
-	int	*****p5;
-	int	******p6;
-	int	*******p7;
-	int	********p8;
-	int	*********p9;
-
-	p5 = &p4;
-	p6 = &p5;
-	p7 = &p6;
-	p8 = &p7;
-	p9 = &p8;
-	ft_ultimate_ft(p9);
+	*div = a / b;
+	*mod = a % b;
 }
 
 // int	main(void)
 // {
-// 	int	x;
-// 	int	*p1;
-// 	int	**p2;
-// 	int	***p3;
-// 	int	****p4;
+// 	int	a;
+// 	int	b;
+// 	int	div;
+// 	int	mod;
 
-// 	x = 0;
-// 	p1 = &x;
-// 	p2 = &p1;
-// 	p3 = &p2;
-// 	p4 = &p3;
-// 	ft_pointer_p1(p4);
-// 	printf("x is now: %d\n", x);
+// 	a = 5;
+// 	b = 2;
+// 	div = 0;
+// 	mod = 0;
+// 	ft_div_mod(a, b, &div, &mod);
+// 	printf("A: %d / B: %d\n", a, b);
+// 	printf("Resultado da divisão: %d\nResto da divisão: %d\n", div, mod);
 // 	return (0);
 // }

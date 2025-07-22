@@ -1,35 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlaranje <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/21 16:40:28 by tlaranje          #+#    #+#             */
-/*   Updated: 2025/07/22 11:16:20 by tlaranje         ###   ########.fr       */
+/*   Created: 2025/07/22 12:10:29 by tlaranje          #+#    #+#             */
+/*   Updated: 2025/07/22 12:10:33 by tlaranje         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-void	ft_swap(int *a, int *b)
+void	ft_putstr(char *str)
 {
-	int	c;
+	int	i;
 
-	c = *a;
-	*a = *b;
-	*b = c;
+	i = 0;
+	while (str[i] != '\0')
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
 }
 
 // int	main(void)
 // {
-// 	int	a;
-// 	int	b;
-
-// 	a = 1;
-// 	b = 2;
-// 	printf("Before A: %d, Before B: %d\n", a, b);
-// 	ft_swap(&a, &b);
-// 	printf("After A: %d, After B: %d\n", a, b);
+// 	ft_putstr("Olá, mundo!");
 // 	return (0);
 // }

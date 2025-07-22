@@ -1,52 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlaranje <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/21 16:18:44 by tlaranje          #+#    #+#             */
-/*   Updated: 2025/07/21 16:18:48 by tlaranje         ###   ########.fr       */
+/*   Created: 2025/07/22 12:21:11 by tlaranje          #+#    #+#             */
+/*   Updated: 2025/07/22 12:21:14 by tlaranje         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_ultimate_ft(int *********nbr)
+int	ft_strlen(char *str)
 {
-	*********nbr = 42;
-}
+	int	i;
 
-void	ft_pointer_p1(int ****p4)
-{
-	int	*****p5;
-	int	******p6;
-	int	*******p7;
-	int	********p8;
-	int	*********p9;
-
-	p5 = &p4;
-	p6 = &p5;
-	p7 = &p6;
-	p8 = &p7;
-	p9 = &p8;
-	ft_ultimate_ft(p9);
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
 
 // int	main(void)
 // {
-// 	int	x;
-// 	int	*p1;
-// 	int	**p2;
-// 	int	***p3;
-// 	int	****p4;
+// 	char	*text;
+// 	int		size;
 
-// 	x = 0;
-// 	p1 = &x;
-// 	p2 = &p1;
-// 	p3 = &p2;
-// 	p4 = &p3;
-// 	ft_pointer_p1(p4);
-// 	printf("x is now: %d\n", x);
+// 	text = "Olá, mundo!";
+// 	size = ft_strlen(text);
+// 	printf("Número de caracteres da string: %d", size);
 // 	return (0);
 // }
